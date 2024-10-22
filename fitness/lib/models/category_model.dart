@@ -11,7 +11,7 @@ class CategoryModel {
     required this.boxColor,
   });
 
-  List<CategoryModel> getCategories(){
+  static List<CategoryModel> getCategories(){
     List<CategoryModel> categories = [];
 
 
@@ -45,7 +45,7 @@ class CategoryModel {
         iconPath: 'assets/icons/orange-snacks.svg',
         boxColor: Color(0xffC58BF2),
       )
-    )
+    );
 
     return categories;
   }
