@@ -37,11 +37,12 @@ class HomePage extends StatelessWidget {
 
   Column _dietSection() {
     return Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
           Padding(
             padding: const EdgeInsets.only(left: 20),
             child: Text(
-              'Category',
+              'Recomendation\n for Diet',
               style: TextStyle(
                 color: Colors.black,
                 fontSize: 18,
