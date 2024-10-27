@@ -25,14 +25,30 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: appBar(),
       backgroundColor: Colors.white,
-      body: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+      body: ListView(
         children: [
           _searchField(),
           SizedBox(height: 40),
           _categoriesSection(),
           SizedBox(height: 40),
-          _dietSection()
+          _dietSection(),
+          SizedBox(height: 40),
+          Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Text(
+                  'Popular',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 18,
+                    fontWeight: FontWeight.w600
+                  ),
+                ),
+              ),
+            ],
+          )
         ],
       ),
     );
